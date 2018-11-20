@@ -119,10 +119,10 @@ public class QuickSort {
 
             }
             swap(arr, i, r);
-            j = i - 1;      //now j and i changed their roles
-            //we have one void element, because j = i - 2; NOW J < I
+            j = i - 1;      //dividing main array to 2 parts: first one which contains nums < V, and second one, 
+                            //which contains nums > V
             i++;
-            //now we need to exchange blocks "=" wia "<", and "=" wia ">" respectively
+            //now we need to exchange blocks "=" via "<", and "=" via ">" respectively
             for (int k = l; k <= p; k++, j--)
                 swap(arr, k, j);
 
